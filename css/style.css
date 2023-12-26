@@ -6,6 +6,10 @@
   list-style:none;
 }
 
+a {
+  text-decoration: none;
+}
+
 body{
   background: #ffffff;
   color:#222328;
@@ -23,19 +27,21 @@ main{
 header {
   width: 100%;
   height: 100px;
-  background-color: blue;
+  background-color: rgb(160, 78, 218);
 }
 
 .logo {
   float: left;
   width: 200px;
   height: 100px;
-  background-color: indigo;
-}
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
 
-.mainMenu {
-
 }
+/* .mainMenu {
+
+} */
 
 nav {
   float: right;
