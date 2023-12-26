@@ -45,33 +45,36 @@ header {
 
 nav {
   float: right;
-  width: 600px;
+  width: 800px;
   height: 100px;
-
+  line-height: 60px;
+  text-align: center;
 }
 
 nav > ul {
+  width: 100%;
+  height: 100%;
   float: right;
 }
 
 .mainMenu > li {
+  width: 25%;
+  height: 100%;
   float: left;
-  position: relative;
 }
 .mainMenu > li > a {
   display: block;
   color: #fff;
-  padding: 20px 50px;
+  padding: 20px;
 }
 .mainMenu > li > a:hover {
- color: rgb(226, 207, 240);
- 
+ background-color: rgb(164, 99, 210);
 }
 
 .mainMenu > li > ul {
   display: none;
-  width: 150px;
-  background-color: rgb(0, 0, 0, 0.5);
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.8);
 }
 
 .mainMenu > li:hover > ul {
@@ -79,7 +82,11 @@ nav > ul {
 }
 
 .mainMenu > li > ul > li {
-  padding: 10px 10px 10px 0px;
+  text-align: center;
+}
+
+.mainMenu > li > ul > li:hover {
+  background-color: rgb(255, 255, 255, 0.1);
 }
 
 .mainMenu > li > ul > li > a{
