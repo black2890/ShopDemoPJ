@@ -47,8 +47,45 @@ nav {
   float: right;
   width: 600px;
   height: 100px;
-  background-color: antiquewhite;
+
 }
+
+nav > ul {
+  float: right;
+}
+
+.mainMenu > li {
+  float: left;
+  position: relative;
+}
+.mainMenu > li > a {
+  display: block;
+  color: #fff;
+  padding: 20px 50px;
+}
+.mainMenu > li > a:hover {
+ color: rgb(226, 207, 240);
+ 
+}
+
+.mainMenu > li > ul {
+  display: none;
+  width: 150px;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.mainMenu > li:hover > ul {
+  display: block;
+}
+
+.mainMenu > li > ul > li {
+  padding: 10px 10px 10px 0px;
+}
+
+.mainMenu > li > ul > li > a{
+  color: #fff;
+}
+
 /* 헤더 끝 */
 /* 이미지 슬라이드 시작 width 1200px, height 300px */
 .imgSlide {
