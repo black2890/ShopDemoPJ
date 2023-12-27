@@ -76,7 +76,7 @@ nav {
 /* 컨텐츠 3: 바로가기 */
 .direct {
   float: left;
-  width: 33.3%;
+  width: 33.4%;
   height: 200px;
   background-color: darkgoldenrod;
 }
@@ -86,12 +86,12 @@ footer {
   width: 100%;
   height: 100px;
   position: relative;
-  /* background-color: #222328; */
+  background-color: #222328;
 }
 footer div {
   height: 100%;
-  display: inline;
 }
+
 #div_logo img {
   margin-left: 20px;
   margin-top: 30px;
@@ -99,7 +99,15 @@ footer div {
 
 #div_cpWrite {
   position: absolute;
-  
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  text-align: center;
 }
 
+#div_cpWrite span {
+  position: relative;
+  top: 40%;
+  color: rgb(100, 100, 100);
+}
 /* css 내용 작성 */
