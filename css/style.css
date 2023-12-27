@@ -60,7 +60,7 @@ nav {
 .contents {
   width: 100%;
   height: 200px;
-  color: rgb(116, 10, 192);;
+  color: rgb(116, 10, 192);
 }
 /* 컨텐츠 1: 탭메뉴 */
 .tabMenu {
@@ -123,14 +123,14 @@ nav {
 }
 
 /* 컨텐츠 2: 배너 */
-.banner {
+#banner {
   position: relative;
   float: left;
   width: 400px;
   height: 200px;
 }
 
-.banner img {
+#banner img {
   position: absolute;
   top: 10px;
   left: 5px;
@@ -138,19 +138,43 @@ nav {
   height: 180px;
 }
 /* 컨텐츠 3: 바로가기 */
-.direct {
+#direct {
   position: relative;
   float: right;
   width: 400px;
   height: 200px;
 }
 
-.direct img {
+#direct img {
   position: absolute;
   top: 10px;
   left: 5px;
   width: 390px;
   height: 180px;
+}
+
+.img_a > a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: 1000;
+  background-color: rgb(116, 10, 192, 0.5);
+  width: 150px;
+  height: 50px;
+}
+
+.img_a > a:hover {
+  color: black;
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+.img_a > a > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 /* 컨텐츠 끝 */
 /* footer 시작 width 1200px (대략 200/ 800/ 200), height 100px */
