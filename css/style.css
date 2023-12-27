@@ -60,6 +60,7 @@ nav {
 .contents {
   width: 100%;
   height: 200px;
+  margin: 10px 0;
   color: rgb(116, 10, 192);
 }
 /* 컨텐츠 1: 탭메뉴 */
@@ -67,18 +68,17 @@ nav {
   float: left;
   width: 400px;
   height: 200px;
-  padding: 10px 10px 10px 0;
   box-sizing: border-box;
 }
 .tabMenu input[type="radio"]{
   display: none;
 }
 .tabMenu label {
-  height: 10px;
+  float: left;
+  height: 5px;
   display: inline-block;
   padding: 15px 25px;
   line-height: 10px;
-  
   border: 1px solid rgb(0, 0, 0, 0.2);
   background-color: rgb(0, 0, 0, 0.1);
 }
@@ -90,10 +90,15 @@ nav {
   font-weight: 600;
 }
 .tabContent {
-  /* display: none; */
+  width: 400px;
+  height: 160px;
+  clear: left;
+  display: none;
   padding: 10px;
   border: 1px solid rgb(0, 0, 0, 0.2);
+  box-sizing: border-box;
 }
+/* 공지사항 해당 부분 */
 #notice ul{
   list-style: disc;
   padding-left: 5px;
@@ -110,15 +115,27 @@ nav {
 #notice ul li:hover {
   background-color: beige;
 }
+/* 갤러리 해당부분 */
 #gallery ul li {
   display: inline;
 }
 #list2, #list4{
   background-color: rgb(245, 238, 250);
 }
+#gallery ul {
+  padding-top: 10px;
+}
 
-#tab1 :checked ~ #notice,
-#tab2 :checked ~ #gallery {
+#gallery img {
+  margin: 15px;
+}
+
+#gallery img:hover {
+  color: rgb(0, 0, 0, 0.5);
+}
+
+#tab1:checked ~ #notice,
+#tab2:checked ~ #gallery {
   display: block;
 }
 
@@ -132,10 +149,9 @@ nav {
 
 #banner img {
   position: absolute;
-  top: 10px;
-  left: 5px;
+  left: 10px;
   width: 390px;
-  height: 180px;
+  height: 200px;
 }
 /* 컨텐츠 3: 바로가기 */
 #direct {
@@ -147,10 +163,9 @@ nav {
 
 #direct img {
   position: absolute;
-  top: 10px;
-  left: 5px;
+  left: 10px;
   width: 390px;
-  height: 180px;
+  height: 200px;
 }
 
 .img_a > a {
